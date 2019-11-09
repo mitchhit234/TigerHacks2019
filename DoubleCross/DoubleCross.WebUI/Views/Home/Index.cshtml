@@ -2,8 +2,23 @@
     ViewBag.Title = "Home Page";
 }
 
+@model DoubleCross.Core.ViewModels.HomeIndexViewModel
 <div class="form-group" , align="center">
     <h1>Welcome to DoubleCross!</h1>
     <h2>Please enter all names seperated by commas:</h2>
-</div>
+    <p class="lead" , align="center">
+        @using (Html.BeginForm("Submit", "Home"))
+        {
+            <p>Enter Player Names &nbsp;</p>
+            @Html.TextBoxFor(s => s.PlayerName, new { placeholder = "Enter player phone numbers", 
+                                                      required = "At least 3 players required.", 
+                                                      @class = "form-control" })
+            <br />
+        <p>Phone numbers &nbsp;</p>
+        @Html.TextBoxFor(s => s.PhoneNumber, new { placeholder = "Enter player phone numbers", @class = "form-control" })
+        <input type="submit" class="btn btn-primary" value="Submit" id="btnSubmit" required />
+        <br />
+    }
+        </p>
+    </div>
 

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using DoubleCross.Core.ViewModels;
 
 namespace WebUI.Controllers
 {
@@ -12,10 +13,17 @@ namespace WebUI.Controllers
         {
             return View();
         }
-
-        public ActionResult About()
+        [HttpPost]
+        public ActionResult Submit(HomeIndexViewModel model)
         {
-            ViewBag.Message = "Your application description page.";
+            string playerNames = model.PlayerName;
+            string phoneNumbers = model.PhoneNumber;
+            return View();
+        }
+
+        public ActionResult Game()
+        {
+            ViewBag.Message = "Gamer Time";
 
             return View();
         }

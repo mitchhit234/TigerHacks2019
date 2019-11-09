@@ -112,6 +112,9 @@
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.11.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="Telerik.Web.UI">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Progress\Telerik UI for ASP.NET AJAX R3 2019\Bin45\Telerik.Web.UI.dll</HintPath>
+    </Reference>
     <Reference Include="Twilio, Version=5.35.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Twilio.5.35.0\lib\net451\Twilio.dll</HintPath>
     </Reference>
@@ -198,6 +201,12 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DoubleCross.Core\DoubleCross.Core.csproj">
+      <Project>{59437867-9ef0-4322-a968-f9e25ac86e83}</Project>
+      <Name>DoubleCross.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
