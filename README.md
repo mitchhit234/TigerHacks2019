@@ -2,21 +2,23 @@
 
 ## Theme: Art
 
-## Idea: 
+## Title: Double-Cross
 #### Several roles in the game:
-  - [ ] Tricky man: Pick a hard word to throw off the guessers
-  - [ ] Eye-Witness: Knows the word: tries to get guessors to find the word
-  - [ ] Guessers: try guessing the word input by the Spy
+  - [ ] Double-Agent: Pick a hard code word to throw off detectives, also throw off detectives during guessing phase
+  - [ ] Witness: Knows the code word, tries to get detectives to say it
+  - [ ] Detectives: try guessing the code word input by the double-agent
   
   
 #### Procedure:
- - [ ] Eye-Witness is called by twilo, voice message tells him he is the witness
- - [ ] Everyone else gets a text: Guessers must reply with CONFIRM; Spy Inputs a word here
- - [ ] Witness is given another call, telling him the word
- - [ ] Witness has 3 rounds to get guessers gussing corretly in an alloted amount of time
-  1. Charades (3 points to guessing correctly)
-  2. Drawing (2 points to guessing corectly)
-  3. Words (1 point to guessing correctly) (if guessers cannot guess, spy wins)
+ - [ ] Everyone receives text prompt from twilio to send in their code word
+ - [ ] Everyone receives text indicating whether they are the double-agent or a detective
+ - [ ] Witness is called by twilo, voice message tells him he is the witness and gives him the word from double-agent
+ - [ ] Witness has 3 rounds to get detectives to say the word in an allotted amount of time
+  1. Charades
+  2. Drawing
+  3. Words (arbitrary rules?)
+ - [ ] Detectives get one collective guess as to who the double-agent is in order to win the game.
+  
   
  
 #### Languages
