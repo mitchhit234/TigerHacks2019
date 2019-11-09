@@ -3,5 +3,5 @@
 ## Theme: Art
 
 This project operates under the notion of art, current thoughts:
--[ ] Using Twilo
--[ ] Using SparkAR
+- [ ] Using Twilo
+- [ ] Using SparkAR
