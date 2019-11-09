@@ -13,6 +13,7 @@
  - [ ] Everyone receives text prompt from twilio to send in their code word
  - [ ] Everyone receives text indicating whether they are the double-agent or a detective
  - [ ] Witness is called by twilo, voice message tells him he is the witness and gives him the word from double-agent
+ Call audio: ""
  - [ ] Witness has 3 rounds to get detectives to say the word in an allotted amount of time
   1. Charades
   2. Drawing
