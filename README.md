@@ -1,6 +1,6 @@
 # TigerHacks2019
 
-##Theme: Art
+## Theme: Art
 
 This project operates under the notion of art, current thoughts:
 -[ ] Using Twilo
