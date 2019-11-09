@@ -2,7 +2,7 @@
 
 namespace DoubleCross.Core
 {
-    public class StringParseService : IStringParseService
+    public class StringParseService
     {
 
     }
