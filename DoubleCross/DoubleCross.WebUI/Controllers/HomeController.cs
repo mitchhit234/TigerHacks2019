@@ -9,6 +9,10 @@ namespace WebUI.Controllers
 {
     public class HomeController : Controller
     {
+        public HomeController()
+        {
+            _twilioConnectionService = twilioConnectionService;
+        }
         public ActionResult Index()
         {
             return View();
@@ -17,7 +21,9 @@ namespace WebUI.Controllers
         public ActionResult Submit(HomeIndexViewModel model)
         {
             string playerNames = model.PlayerName;
+            
             string phoneNumbers = model.PhoneNumber;
+
             return View();
         }
 
