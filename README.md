@@ -4,7 +4,7 @@
 
 ## Idea: 
 #### Several roles in the game:
-  - [ ] Spy: Pick a hard word to throw off the guessers
+  - [ ] Tricky man: Pick a hard word to throw off the guessers
   - [ ] Eye-Witness: Knows the word: tries to get guessors to find the word
   - [ ] Guessers: try guessing the word input by the Spy
   
