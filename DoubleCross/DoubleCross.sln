@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29324.140
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoubleCross.WebUI", "WebUI\DoubleCross.WebUI.csproj", "{919BAB4B-2769-4AC5-B611-CFDF9ACC5F9C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DoubleCross.Core", "DoubleCross.Core\DoubleCross.Core.csproj", "{59437867-9EF0-4322-A968-F9E25AC86E83}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoubleCross.Services", "DoubleCross.WebUI\DoubleCross.Services.csproj", "{FC843CF5-B7A5-487C-8E11-434DADFBF5DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DoubleCross.Addin", "DoubleCross.Addin\DoubleCross.Addin.csproj", "{C82378DB-5B8E-4DD2-B74B-C01382394B1B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoubleCross.Core", "DoubleCross.Core\DoubleCross.Core.csproj", "{59437867-9EF0-4322-A968-F9E25AC86E83}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DoubleCross.Services", "DoubleCross.Services\DoubleCross.Services.csproj", "{E0F6EF93-CF17-4A28-90FB-17FA3C766ED2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoubleCross.Addin", "DoubleCross.Addin\DoubleCross.Addin.csproj", "{C82378DB-5B8E-4DD2-B74B-C01382394B1B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoubleCross.WebUI", "DoubleCross.WebUI\DoubleCross.WebUI.csproj", "{919BAB4B-2769-4AC5-B611-CFDF9ACC5F9C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,14 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{919BAB4B-2769-4AC5-B611-CFDF9ACC5F9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{919BAB4B-2769-4AC5-B611-CFDF9ACC5F9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{919BAB4B-2769-4AC5-B611-CFDF9ACC5F9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{919BAB4B-2769-4AC5-B611-CFDF9ACC5F9C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FC843CF5-B7A5-487C-8E11-434DADFBF5DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FC843CF5-B7A5-487C-8E11-434DADFBF5DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FC843CF5-B7A5-487C-8E11-434DADFBF5DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FC843CF5-B7A5-487C-8E11-434DADFBF5DC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{59437867-9EF0-4322-A968-F9E25AC86E83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{59437867-9EF0-4322-A968-F9E25AC86E83}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{59437867-9EF0-4322-A968-F9E25AC86E83}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -33,6 +25,14 @@ Global
 		{C82378DB-5B8E-4DD2-B74B-C01382394B1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C82378DB-5B8E-4DD2-B74B-C01382394B1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C82378DB-5B8E-4DD2-B74B-C01382394B1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0F6EF93-CF17-4A28-90FB-17FA3C766ED2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0F6EF93-CF17-4A28-90FB-17FA3C766ED2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0F6EF93-CF17-4A28-90FB-17FA3C766ED2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0F6EF93-CF17-4A28-90FB-17FA3C766ED2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{919BAB4B-2769-4AC5-B611-CFDF9ACC5F9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{919BAB4B-2769-4AC5-B611-CFDF9ACC5F9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{919BAB4B-2769-4AC5-B611-CFDF9ACC5F9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{919BAB4B-2769-4AC5-B611-CFDF9ACC5F9C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
