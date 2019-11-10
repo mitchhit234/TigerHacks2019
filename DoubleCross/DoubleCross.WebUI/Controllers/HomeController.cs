@@ -29,15 +29,7 @@ namespace WebUI.Controllers
                 PhoneNumList[i] = PhoneNumList[i].Replace("-", "");
             }
 
-
-            return View();
-        }
-
-        public ActionResult Game()
-        {
-            ViewBag.Message = "Gamer Time";
-
-            return View();
+            return RedirectToAction("Index","GameController");
         }
 
         public ActionResult Contact()
