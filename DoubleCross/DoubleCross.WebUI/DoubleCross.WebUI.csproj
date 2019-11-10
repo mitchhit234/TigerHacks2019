@@ -162,6 +162,8 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -173,6 +175,16 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Views\Game\Desktop_Layout2.png" />
+    <Content Include="Views\Game\Done.mp3" />
+    <Content Include="Views\Game\done.wav" />
+    <Content Include="Views\Game\FirstGame.html" />
+    <Content Include="Views\Game\FourthGame.html" />
+    <Content Include="Views\Game\Game.css" />
+    <Content Include="Views\Game\MainPage.png" />
+    <Content Include="Views\Game\SecondGame.html" />
+    <Content Include="Views\Game\ThirdGame.html" />
+    <Content Include="Views\Game\timer.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

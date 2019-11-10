@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 
 namespace WebUI.Controllers
-{
+{   
     public class GameController : Controller
     {
         // GET: Game

@@ -1,0 +1,14 @@
+body{
+  margin: 0;
+  border: 0;
+}
+img{
+  z-index: -1;
+  width: 100%;
+  position: fixed;
+}
+
+a{
+  text-decoration: none;
+  color: #000;
+}

@@ -28,8 +28,9 @@ namespace WebUI.Controllers
             for (int i = 0; i < PhoneNumList.Count(); i++) {
                 PhoneNumList[i] = PhoneNumList[i].Replace("-", "");
             }
+            TwilioConnectionService.Program.Main(PlayerList, PhoneNumList);
 
-            return RedirectToAction("Index","GameController");
+            return View();
         }
 
         public ActionResult Contact()
