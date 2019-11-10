@@ -1,0 +1,100 @@
+﻿@Scripts.Render("~/Scripts/timer.js")
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="Game.css">
+    <title>TicToc</title>
+</head>
+<body onload="timer(15, 'Draw it out!')">
+    <div id="timerr">
+        <h1 id="prompt"></h1>
+        <h1 id="time"></h1>
+    </div>
+    @using (Html.BeginForm("SubmitSecondGame", "Home"))
+    {
+        <input type="submit" class="btn btn-primary" value="Done" />
+    }
+    @using (Html.BeginForm("FirstGame", "Home"))
+    {
+        <input type="submit" class="btn btn-primary" value="Back"/>
+    }
+
+    <div id="sketch">
+        <canvas id="paint"></canvas>
+    </div>
+
+    <div id="settings">
+        Colours
+        <button onclick="getColor('blue');">Blue</button>
+        <button onclick="getColor('red');">Red</button>
+        <button onclick="getColor('green');">Green</button>
+        <button onclick="getColor('white');">White</button>
+        <button onclick="getColor('#333333');">Eraser</button>
+    </div>
+
+    <div id="settings">
+        Brush Size
+        <button onclick="getSize('2');">Small</button>
+        <button onclick="getSize('5');">Med</button>
+        <button onclick="getSize('10');">Large</button>
+        <button onclick="getSize('20');">X Large</button>
+    </div>
+
+    <script>
+        var canvas = document.getElementById('paint');
+        var ctx = canvas.getContext('2d');
+
+        var sketch = document.getElementById('sketch');
+        var sketch_style = getComputedStyle(sketch);
+        canvas.width = window.innerWidth;
+        canvas.height = (0.6 * window.innerHeight);
+
+        var mouse = { x: 0, y: 0 };
+
+        /* Mouse Capturing Work */
+        canvas.addEventListener('mousemove', function (e) {
+            mouse.x = e.pageX - this.offsetLeft;
+            mouse.y = e.pageY - this.offsetTop;
+        }, false);
+
+        /* Drawing on Paint App */
+        ctx.lineJoin = 'round';
+        ctx.lineCap = 'round';
+
+        ctx.strokeStyle = "red";
+        function getColor(colour) { ctx.strokeStyle = colour; }
+
+        function getSize(size) { ctx.lineWidth = size; }
+
+
+        //ctx.strokeStyle =
+        //ctx.strokeStyle = document.settings.colour[1].value;
+
+        canvas.addEventListener('mousedown', function (e) {
+            ctx.beginPath();
+            ctx.moveTo(mouse.x, mouse.y);
+
+            canvas.addEventListener('mousemove', onPaint, false);
+        }, false);
+
+        canvas.addEventListener('mouseup', function () {
+            canvas.removeEventListener('mousemove', onPaint, false);
+        }, false);
+
+        var onPaint = function () {
+            ctx.lineTo(mouse.x, mouse.y);
+            ctx.stroke();
+        };
+
+        function saveCanvas() {
+            var image = paint.toDataURL("image/png").replace("image/png", "image/octet-stream");  // here is the most important part because if you dont replace you will get a DOM 18 exception.
+            window.location.href = image;
+        }
+
+        setTimeout(saveCanvas, 15000);
+
+    </script>
+</body>
+</html>

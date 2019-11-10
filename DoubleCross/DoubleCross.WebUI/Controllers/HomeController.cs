@@ -12,7 +12,7 @@ namespace WebUI.Controllers
             return View();
         }
         [HttpPost]
-        public ActionResult Submit(HomeIndexViewModel model)
+        public ActionResult SubmitIndex(HomeIndexViewModel model)
         {
             string playerNames = model.PlayerName;
             string phoneNumbers = model.PhoneNumber;
@@ -28,16 +28,47 @@ namespace WebUI.Controllers
             for (int i = 0; i < PhoneNumList.Count(); i++) {
                 PhoneNumList[i] = PhoneNumList[i].Replace("-", "");
             }
-            TwilioConnectionService.Program.Main(PlayerList, PhoneNumList);
+            //TwilioConnectionService.Program.Main(PlayerList, PhoneNumList);
 
-            return View();
+            return RedirectToAction("FirstGame");
         }
 
-        public ActionResult Contact()
+        public ActionResult FirstGame()
         {
-            ViewBag.Message = "Your contact page.";
-
             return View();
+        }
+        [HttpPost]
+        public ActionResult SubmitFirstGame()
+        {
+            return RedirectToAction("SecondGame");
+        }
+
+        public ActionResult SecondGame()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult SubmitSecondGame()
+        {
+            return RedirectToAction("ThirdGame");
+        }
+        public ActionResult ThirdGame()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult SubmitThirdGame()
+        {
+            return RedirectToAction("FourthGame");
+        }
+
+        public ActionResult FourthGame()
+        {
+            return View();
+        }
+        public ActionResult SubmitFourthGame()
+        {
+            return RedirectToAction("Index");
         }
     }
 }

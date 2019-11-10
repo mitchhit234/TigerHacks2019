@@ -1,0 +1,26 @@
+﻿@Scripts.Render("~/Scripts/timer.js")
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="Game.css">
+    <script type="text/javascript" src="timer.js"></script>
+    <script type="text/javascript" src="GameOverview.js"></script>
+    <title>TicToc</title>
+</head>
+<body onload="timer(45, 'Find the Double-Agent!')">
+    <div id="timerr">
+        <h1 id="prompt"></h1>
+        <h1 id="time"></h1>
+    </div>
+    @using (Html.BeginForm("SubmitFourthGame", "Home"))
+    {
+        <input type="submit" class="btn btn-primary" value="Finish Game" />
+    }
+    @using (Html.BeginForm("ThirdGame", "Home"))
+    {
+        <input type="submit" class="btn btn-primary" value="Back" />
+    }
+</body>
+</html>

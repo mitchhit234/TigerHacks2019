@@ -7,7 +7,7 @@
     <h1>Welcome to DoubleCross!</h1>
     <h2>Please enter all names seperated by commas:</h2>
     <p class="lead" , align="center">
-        @using (Html.BeginForm("Submit", "Home"))
+        @using (Html.BeginForm("SubmitIndex", "Home"))
         {
             <p>Enter Player Names &nbsp;</p>
             @Html.TextBoxFor(s => s.PlayerName, new { placeholder = "Enter player names", 
@@ -16,7 +16,7 @@
             <br />
         <p>Phone numbers &nbsp;</p>
         @Html.TextBoxFor(s => s.PhoneNumber, new { placeholder = "Enter player phone numbers", @class = "form-control" })
-        <input type="submit" class="btn btn-primary" value="Submit" id="btnSubmit" required />
+        <input type="submit" class="btn btn-primary" value="Submit"/>
         <br />
     }
         </p>
