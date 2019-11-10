@@ -5,14 +5,13 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="Game.css">
-    <script type="text/javascript" src="timer.js"></script>
-    <script type="text/javascript" src="GameOverview.js"></script>
     <title>TicToc</title>
 </head>
-<body onload="timer(20, 'Act it out!')">
+<body onload="timer(20, 'Act it out!', 0)">
     <div id="timerr">
         <h1 id="prompt"></h1>
         <h1 id="time"></h1>
+        <h1 id="alarm"></h1>
     </div>
     @using (Html.BeginForm("SecondGame", "Home"))
     {

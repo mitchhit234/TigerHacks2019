@@ -7,10 +7,11 @@
     <link rel="stylesheet" type="text/css" href="Game.css">
     <title>TicToc</title>
 </head>
-<body onload="timer(15, 'Draw it out!')">
+<body onload="timer(15, 'Draw it out!', 0)">
     <div id="timerr">
         <h1 id="prompt"></h1>
         <h1 id="time"></h1>
+        <h1 id="alarm"></h1>
     </div>
     @using (Html.BeginForm("SubmitSecondGame", "Home"))
     {

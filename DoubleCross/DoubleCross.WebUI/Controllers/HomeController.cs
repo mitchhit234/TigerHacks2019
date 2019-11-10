@@ -11,6 +11,7 @@ namespace WebUI.Controllers
         {
             return View();
         }
+
         [HttpPost]
         public ActionResult SubmitIndex(HomeIndexViewModel model)
         {
@@ -69,6 +70,11 @@ namespace WebUI.Controllers
         public ActionResult SubmitFourthGame()
         {
             return RedirectToAction("Index");
+        }
+
+        public ActionResult HowToPlay()
+        {
+            return View();
         }
     }
 }

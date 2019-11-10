@@ -175,11 +175,6 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\timer.js" />
-    <Content Include="Views\Game\Desktop_Layout2.png" />
-    <Content Include="Views\Game\Done.mp3" />
-    <Content Include="Views\Game\done.wav" />
-    <Content Include="Views\Game\Game.css" />
-    <Content Include="Views\Game\MainPage.png" />
     <Content Include="Views\Home\Game.css" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -192,7 +187,7 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\HowToPlay.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\FirstGame.cshtml" />
     <Content Include="Views\Home\FourthGame.cshtml" />
