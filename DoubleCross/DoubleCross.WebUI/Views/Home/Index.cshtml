@@ -10,7 +10,7 @@
         @using (Html.BeginForm("Submit", "Home"))
         {
             <p>Enter Player Names &nbsp;</p>
-            @Html.TextBoxFor(s => s.PlayerName, new { placeholder = "Enter player phone numbers", 
+            @Html.TextBoxFor(s => s.PlayerName, new { placeholder = "Enter player names", 
                                                       required = "At least 3 players required.", 
                                                       @class = "form-control" })
             <br />

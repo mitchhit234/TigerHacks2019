@@ -147,6 +147,8 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\StringParseService.cs" />
+    <Compile Include="StringParseService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
@@ -206,6 +208,10 @@
     <ProjectReference Include="..\DoubleCross.Core\DoubleCross.Core.csproj">
       <Project>{59437867-9ef0-4322-a968-f9e25ac86e83}</Project>
       <Name>DoubleCross.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DoubleCross.Services\DoubleCross.Services.csproj">
+      <Project>{e0f6ef93-cf17-4a28-90fb-17fa3c766ed2}</Project>
+      <Name>DoubleCross.Services</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

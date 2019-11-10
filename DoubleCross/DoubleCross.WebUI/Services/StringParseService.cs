@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace DoubleCross.Core
+namespace DoubleCross.WebUI
 {
-    public class StringParseService : IStringParseService
+    public class StringParseService
     {
         public List<string> PlayerNames(string playerNames)
         {
@@ -20,4 +20,11 @@ namespace DoubleCross.Core
         }
 
     }
+
+    //public interface IStringParseService
+    //{
+    //    List<string> PlayerNames(string playerNames);
+    //    List<string> PhoneNumbers(string phoneNumbers);
+
+    //}
 }
